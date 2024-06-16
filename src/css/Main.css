@@ -1,0 +1,14 @@
+body{
+
+    background-image: 
+    url('../asset/background.png');
+    background-repeat:no-repeat;
+
+    color: white;
+    font-size: 20px;
+}
+/* p{
+    position: relative;
+    top:581px;
+    left: 99px
+} */

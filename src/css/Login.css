@@ -1,0 +1,58 @@
+/* .card{
+        width: 600px;
+        height:550px; 
+        position: relative;
+        top: 100px;
+        left:55%; 
+        border-radius:21px;
+        border:1px;
+        background: rgba(255, 255, 255, 0.43);
+        font-size:x-large;
+        color: white;
+        text-align: center;
+    } */
+/* 
+    .label{
+        position: relative;
+        right: 37%;
+    } */
+
+.control {
+    width: 530px;
+    height: 67px;
+    top: 273px;
+    left: 758px;
+    border-radius: 21px;
+    border: solid white;
+    background: rgba(255, 255, 255, 0.43);
+
+}
+
+.login-btn{
+ background: rgba(74, 7, 50, 1);
+ border-radius: 21px;
+ border-color:rgba(255, 255, 255, 1);
+ width: 500px;
+height: 62px;
+top: 469px;
+left: 758px;
+gap: 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+font-size: 22px;
+}
+
+.login-btn:hover{
+    background: white;
+    color:rgba(74, 7, 50, 1);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+} 
+
+.signup{
+    color: rgba(74, 7, 50, 1);
+}

@@ -1,0 +1,30 @@
+.logo {
+  height: 76px;
+  position: relative;
+  left: 60px;
+}
+
+.navbar {
+  background: rgba(2, 1, 29, 0.77);
+  height: 67px;
+}
+
+.nav-link {
+  color: white;
+  text-align: center;
+  position: relative;
+  left: 5%;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.64px;
+  margin-left: 70px;
+}
+
+.nav-link:hover{
+  color:dodgerblue;
+  border-color: black;
+}
+.nav-link:active{
+  color:red;
+  border-color: black;
+}
