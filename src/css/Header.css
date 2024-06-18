@@ -1,7 +1,7 @@
 .logo {
   height: 76px;
   position: relative;
-  left: 60px;
+  right: 180px;
 }
 
 .navbar {
@@ -27,4 +27,12 @@
 .nav-link:active{
   color:red;
   border-color: black;
+}
+.me-auto{
+  position:relative;
+ right:250px
+}
+
+.about{
+  padding-right: 800px;
 }
