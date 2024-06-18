@@ -5,8 +5,9 @@ const Main = () => {
     return (
         <div>
             <br/>
+            <div className='info'>
            Submit your small-cap token project<br/> for a 
-           comprehensive AI-powered analysis.
+           comprehensive AI-powered analysis.</div>
         </div>
     );
 }

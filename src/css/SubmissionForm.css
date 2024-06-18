@@ -1,0 +1,21 @@
+.submitform{
+    text-align: center;
+}
+
+.form1{
+    position: relative;
+}
+
+.checkbox{
+
+        width:20px;
+        height:20px;
+}
+
+.submit-btn{
+    height: 42px;
+    width:276px;
+    background: rgba(36, 44, 70, 1);
+    border: solid 1px white;
+    border-radius: 11px;
+}

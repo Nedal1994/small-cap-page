@@ -1,11 +1,14 @@
 body{
 
     background-image: 
-    url('../asset/background.png');
-    background-repeat:no-repeat;
-
+    url('../asset/bg-pic.png');
     color: white;
     font-size: 20px;
+    background-size:cover;
+}
+.info{
+    position: relative;
+    top: 100px;
 }
 /* p{
     position: relative;
