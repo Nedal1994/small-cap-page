@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
 import { Button, Card } from 'react-bootstrap';
 import { Form } from 'react-bootstrap';
-import '../src/css/Login.css'
-import { Link } from 'react-router-dom';
+import './css/Login.css'
+import {  useNavigate } from 'react-router-dom';
+import axios from 'axios'
+
 
 export default function Login() {
 
@@ -11,6 +13,9 @@ export default function Login() {
 
   const handleLogin = (e) => {
     e.preventDefault()
+    axios.post('http://localhost:3030/login', {email,password})
+    .then(result=>{console.log(result)})
+    .catch(error => console.log(error))
   }
 
   return (
@@ -67,7 +72,7 @@ Create a new account with your email
                    }}
             >
             <br />
-            <Button 
+            <Button type='submit'
             className='login-btn'
             style={{
               width: "500px",

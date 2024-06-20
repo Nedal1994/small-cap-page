@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { Button, Card } from 'react-bootstrap';
 import { Form } from 'react-bootstrap';
-import '../src/css/Signup.css'
+import './css/Signup.css'
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+
 
 const Signup = () => {
 
@@ -12,9 +15,19 @@ const Signup = () => {
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
 
+  const navigate = useNavigate()
+
   const handleSignUp = (e) => {
     e.preventDefault()
+    axios.post('http://localhost:3030/signup',
+      {firstName,lastName,email,confrimEmail,password, confirmPassword})
+    .then(result =>
+      // console.log(result)
+    alert('User registered successfully')
+    )
+    .catch(err => console.log(err))
   }
+
 
   return (
     <div>
@@ -71,13 +84,13 @@ Sign up with your email
                 onChange={(e) => setEmail(e.target.value)}
               />
               <br />
-              <Form.Label className='label'>Confirm email</Form.Label>
+              {/* <Form.Label className='label'>Confirm email</Form.Label>
               <Form.Control
                 type="email"
                 className='control'
                 value={confrimEmail}
                 onChange={(e) => setConfirmEmail(e.target.value)}
-              />
+              /> */}
 
               <br />
               <Form.Label className='pass-label1'>Password</Form.Label>
@@ -89,7 +102,7 @@ Sign up with your email
 
               />
               <br />
-
+{/* 
               <Form.Label className='pass-label2'>Password confirm</Form.Label>
 
               <Form.Control
@@ -98,7 +111,7 @@ Sign up with your email
                 value={confirmPassword}
                 className='control'
                 onChange={(e) => setConfirmPassword(e.target.value)}
-              />
+              /> */}
             </Form.Group>
 
             <Form.Group>
